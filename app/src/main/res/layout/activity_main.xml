@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="6位密码"
+        android:layout_height="wrap_content" />
+    <com.itfitness.paypasswordview.widget.PayPasswordView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        app:borderWidth="2dp"
+        android:id="@+id/ppv_6"
+        app:radius="8dp"
+        app:borderColor="@color/colorPrimary"
+        app:passTextColor="@color/colorPrimary"
+        android:layout_height="40dp">
+
+    </com.itfitness.paypasswordview.widget.PayPasswordView>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="8位密码"
+        android:layout_height="wrap_content" />
+    <com.itfitness.paypasswordview.widget.PayPasswordView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        app:passLength="8"
+        android:id="@+id/ppv_8"
+        android:layout_height="40dp">
+
+    </com.itfitness.paypasswordview.widget.PayPasswordView>
+    <Button
+        android:layout_width="match_parent"
+        android:text="仿支付宝底部弹窗"
+        android:onClick="onClick"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
